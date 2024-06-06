@@ -3,6 +3,5 @@ import tilt
 
 while True:
     mgx, mgy = tilt.getTiltData()
-    print(mgx, mgy)
-    pos = turtle.pos()
-    turtle.goto(pos[0] + round(mgx), pos[1] - round(mgy))
+    pos1 = turtle.pos()
+    turtle.goto(pos1[0] + mgx/100, pos1[1] - mgy/100)
