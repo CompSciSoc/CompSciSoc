@@ -16,4 +16,4 @@ def get_tilt_data():
         mgx, mgy, mgz = line.split()
         return int(mgx), int(mgy), int(mgz)
     except ValueError:
-        raise ValueError("Expected string of _ separated floats")
+        raise ValueError('Expected string of <SPACE> separated floats, got: "' + line + '"')
