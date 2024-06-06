@@ -15,7 +15,8 @@ We can install the module [`pseudo-microbit`](https://pypi.org/project/pseudo-mi
 ## Findings
 | Date | Description |
 | ---- | ----------- |
-| 06/06/2024 | When reading from serial, you have to read the line twice for some reason, otherwise there is a large amount of delay. This literally means duplicating the line and can be store as anything (suggested `_`)
+| 06/06/2024 | When reading from serial, you have to read the line twice for some reason, otherwise there is a large amount of delay. This literally means duplicating the line and can be store as anything (suggested `_`) |
+| 07/06/2024 | MicroPython comes with a limited number of libraries that can be found here: https://docs.micropython.org/en/latest/library/index.html. However, this can be expanded by accessing the MicroBit persistent file system using [`ufs`](https://github.com/ntoll/microfs).
 
 ## Project Structure
 ```
