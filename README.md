@@ -16,3 +16,12 @@ We can install the module [`pseudo-microbit`](https://pypi.org/project/pseudo-mi
 | Date | Description |
 | ---- | ----------- |
 | 06/06/2024 | When reading from serial, you have to read the line twice for some reason, otherwise there is a large amount of delay. This literally means duplicating the line and can be store as anything (suggested `_`)
+
+## Project Structure
+```
+CompSciSoc/         root
+├─ examples/        mini example projects such as tilting turtle
+├─ lib/             library files useful in many projects such as serial tilting
+├─ mb/              microbit python files
+├─ Minigames/       full minigames
+```
