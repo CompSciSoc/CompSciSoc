@@ -30,6 +30,6 @@ def getTiltData():
         except ValueError:
             continue
         noData = False
-    mgx = round(int(mgx/100), 2)
-    mgy = round(int(mgy/100), 2)
+    mgx = round(mgx/100, 2)
+    mgy = round(mgy/100, 2)
     return mgx, mgy
