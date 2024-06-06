@@ -1,8 +1,8 @@
 import sys
-sys.path.insert(1, '/')
+sys.path.insert(1, '../')
 
 import turtle
-import lib.tilt
+import lib.tilt as tilt
 
 while True:
     mgx, mgy, _ = tilt.get_tilt_data()
