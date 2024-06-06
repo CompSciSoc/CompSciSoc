@@ -8,7 +8,7 @@ def getRawTiltData():
     while noData:
         line = ser.readline().decode('utf-8').strip()
         try:
-            splitLine = line.split()
+            splitLine = line.split('_')
             mgx = int(splitLine[0])
             mgy = int(splitLine[1])
         # if the line is not in the expected format, ignore it and try again
@@ -23,7 +23,7 @@ def getTiltData():
     while noData:
         line = ser.readline().decode('utf-8').strip()
         try:
-            splitLine = line.split()
+            splitLine = line.split('_')
             mgx = int(splitLine[0])
             mgy = int(splitLine[1])
         # if the line is not in the expected format, ignore it and try again
