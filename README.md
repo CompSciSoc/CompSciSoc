@@ -4,7 +4,13 @@ Open `.hex` files in https://makecode.microbit.org/
 
 ## Python in Desktop
 ### Flashing via CLI
-We can use `uflash` 
+We can use [`uflash`](https://github.com/ntoll/uflash) (I suggest not searching for this without safe search...). Basic usage shown below:
+
+- `uflash [file]` - flash file to MicroBit
+- `uflash -w [file]` - watch file for changes and immediately flash
+
+### Intellisense and Linting Errors
+We can install the module [`pseudo-microbit`](https://pypi.org/project/pseudo-microbit/) to remove any linting errors when using Microbit functions as well as to generate Intellisense auto-complete.
 
 # Findings
 | Date | Description |
