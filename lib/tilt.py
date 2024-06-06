@@ -14,6 +14,6 @@ def get_tilt_data():
 
     try:
         mgx, mgy, mgz = line.split()
-        return mgx, mgy, mgz
+        return int(mgx), int(mgy), int(mgz)
     except ValueError:
         raise ValueError("Expected string of _ separated floats")
